@@ -1,21 +1,38 @@
+@font-face {
+    font-family: neuMedium;
+    src: url(./fonts/NeueHaasDisplayMediu.ttf);
+}
+
+@font-face {
+    font-family: neuRegular;
+    src: url(./fonts/NeueHaasDisplayLight.ttf);
+}
+
+@font-face {
+    font-family: neuBold;
+    src: url(./fonts/NeueHaasDisplayBold.ttf);
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: neu;
 }
 
 html,
 body {
     height: 100%;
     width: 100%;
+    font-family: neuRegular;
+    overflow-x: hidden;
 }
 
 #page1 {
-    height: 100vh;
+    min-height: 100vh;
     width: 100vw;
     background-color: #efeae3;
     position: relative;
+    padding: 0 2vw;
 }
 
 #nav {
@@ -23,19 +40,20 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2vw 2vw;
+    padding: 2vw .5vw;
 }
 
 #nav_part2 {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    gap: 1vw;
+    gap: .5vw;
+    font-family: neuRegular;
 }
 
 #nav_part2 h4 {
-    padding: 10px 20px;
-    border: 1px solid #dcdcdc;
+    padding: 10px 22px;
+    border: 1px solid #8d8d8d5a;
     border-radius: 30px;
     font-size: 18px;
     text-transform: capitalize;
@@ -71,4 +89,82 @@ body {
 
 #nav_part2 h4:hover a {
     color: white;
+}
+
+#center {
+    height: 80vh;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    border-bottom: 1px solid #4f4f4f84;
+    padding-bottom: 3.5vw;
+}
+
+#left h3 {
+    width: 27vw;
+    font-size: 1.75vw;
+    line-height: 2vw;
+    font-family: neuBold;
+    letter-spacing: .5px;
+}
+
+#right h1 {
+    font-family: neuBold;
+    font-size: 10.5vw;
+    text-transform: uppercase;
+    line-height: 8.5vw;
+    text-align: end;
+}
+
+#page1 video {
+    width: 100%;
+    border-radius: 20px;
+    margin-top: 4vw;
+}
+
+#hero_shape {
+    position: absolute;
+    height: 35vw;
+    width: 45vw;
+    right: 0;
+    top: 80vh;
+}
+
+#hero1 {
+    height: 100%;
+    width: 100%;
+    background-color: #FE320A;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+    filter: blur(20px);
+    position: absolute;
+}
+
+#hero2 {
+    height: 30vw;
+    width: 30vw;
+    background-color: #FE320A;
+    border-radius: 50%;
+    filter: blur(20px);
+    position: absolute;
+}
+
+#hero3 {
+    height: 30vw;
+    width: 30vw;
+    background-color: #FE320A;
+    border-radius: 50%;
+    filter: blur(20px);
+    position: absolute;
+    /* animation: anime1 3s ease-in-out alternate infinite; */
+}
+
+@keyframes anime1 {
+    from {
+        transform: translate(10%, -10%);
+    }
+
+    to {
+        transform: translate(-10%, 10%);
+    }
 }
