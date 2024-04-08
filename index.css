@@ -24,7 +24,7 @@ body {
     height: 100%;
     width: 100%;
     font-family: neuRegular;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
 
 #page1 {
@@ -72,7 +72,7 @@ body {
     width: 100%;
     background-color: #000;
     border-radius: 50%;
-    transition: all ease-in 300ms;
+    transition: all ease-in 400ms;
 }
 
 #nav_part2 h4:hover::after {
@@ -120,6 +120,7 @@ body {
     width: 100%;
     border-radius: 20px;
     margin-top: 4vw;
+    position: relative;
 }
 
 #hero_shape {
@@ -133,38 +134,110 @@ body {
 #hero1 {
     height: 100%;
     width: 100%;
+    /* background-color: black; */
     background-color: #FE320A;
     border-top-left-radius: 50%;
     border-bottom-left-radius: 50%;
     filter: blur(20px);
     position: absolute;
+    animation: anime3 7s ease-in-out alternate infinite;
 }
 
 #hero2 {
     height: 30vw;
     width: 30vw;
+    /* background-color: black; */
     background-color: #FE320A;
     border-radius: 50%;
     filter: blur(20px);
     position: absolute;
+    animation: anime2 5s ease-in-out alternate infinite;
 }
 
 #hero3 {
     height: 30vw;
     width: 30vw;
+    /* background-color: black; */
     background-color: #FE320A;
     border-radius: 50%;
     filter: blur(20px);
     position: absolute;
-    /* animation: anime1 3s ease-in-out alternate infinite; */
+    animation: anime1 3s ease-in-out alternate infinite;
 }
 
 @keyframes anime1 {
     from {
-        transform: translate(10%, -10%);
+        transform: translate(55%, -5%);
     }
 
     to {
-        transform: translate(-10%, 10%);
+        transform: translate(0%, 10%);
+    }
+}
+
+@keyframes anime2 {
+    from {
+        transform: translate(5%, 20%);
+    }
+
+    to {
+        transform: translate(-5%, -5%);
+    }
+}
+
+@keyframes anime3 {
+    from {
+        transform: translate(0%, -5%);
+    }
+
+    to {
+        transform: translate(0%, 1%);
+    }
+}
+
+#page2 {
+    min-height: 100vh;
+    width: 100%;
+    background-color: #efeae3;
+    padding: 8vw 0;
+}
+
+.con {
+    white-space: nowrap;
+    display: inline-block;
+    animation: move 15s linear infinite;
+}
+
+#moving_text {
+    white-space: nowrap;
+    overflow-x: auto;
+}
+
+#moving_text::-webkit-scrollbar {
+    display: none;
+}
+
+#moving_text h1 {
+    font-size: 10vw;
+    font-family: neuBold;
+    display: inline-block;
+}
+
+#round {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    background-color: #FE320A;
+    display: inline-block;
+    margin: 1vw 2vw;
+}
+
+@keyframes move {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100%);
     }
 }
