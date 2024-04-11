@@ -328,7 +328,7 @@ body {
     display: flex;
     align-items: center;
     padding: 3.95vw 2.5vw;
-    border-bottom: 1px solid rgba(92, 92, 92, 0.539);
+    border-bottom: 1px solid rgba(117, 117, 117, 0.539);
     overflow: hidden;
 }
 
@@ -356,12 +356,117 @@ body {
 #fixed_image {
     height: 30vw;
     width: 22vw;
-    background-color: turquoise;
-    border: 1px solid black;
     border-radius: 20px;
     position: fixed;
     left: 55%;
     top: 20%;
     z-index: 9;
     display: none;
+    background-size: cover;
+}
+
+#page4 {
+    min-height: 100vh;
+    width: 100%;
+    background-color: #efeae3;
+}
+
+#page5 {
+    min-height: 100vh;
+    width: 100%;
+}
+
+#footer {
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    background-color: black;
+    color: #fff;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    padding-top: 7rem;
+    padding-left: 2vw;
+    padding-right: 2vw;
+}
+
+#footer h1 {
+    text-align: center;
+    font-family: neuBold;
+    font-size: 22vw;
+}
+
+/* #footer_anime {
+    position: relative;
+    top: 0;
+    height: 40vh;
+    width: 100%;
+    background-color: #FE320A;
+    z-index: -1;
+    display: flex;
+    filter: blur(3px);
+} */
+
+/* #footer_anime1 {
+    height: 600px;
+    width: 100%;
+    background-color: #FE320A;
+    filter: blur(30px);
+    transform: skewX(-50deg);
+} */
+
+/* #footer_anime2 {
+    height: 600px;
+    width: 100%;
+    background-color: #FE320A;
+    filter: blur(30px);
+} */
+
+
+#footer_top {
+    height: 30vh;
+    width: 88%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 7rem;
+    position: relative;
+    top: -10%;
+    z-index: 1;
+}
+
+#footer_top1 {
+    font-family: neuMed;
+    font-size: 1.5vw;
+    line-height: 6vh;
+}
+
+#footer_top2 {
+    font-family: neuRegular;
+    font-size: 1.25vw;
+}
+
+#footer_top2 p {
+    word-spacing: 2px;
+    padding-bottom: 2rem;
+}
+
+#footer_top2 input {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.317);
+    font-size: 1vw;
+    padding-bottom: .75rem;
+    width: 100%;
+}
+
+#footer_bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.352);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.75vw 0;
+    font-size: 1.15vw;
 }
