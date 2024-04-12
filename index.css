@@ -531,6 +531,7 @@ body {
     font-size: 5vw;
     color: transparent;
     background: linear-gradient(to left, #fe330a, #fe780a);
+    background-clip: text;
     -webkit-background-clip: text;
     position: absolute;
     opacity: 0;
