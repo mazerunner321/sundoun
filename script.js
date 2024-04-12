@@ -32,3 +32,10 @@ function swiperJs() {
 }
 
 swiperJs();
+
+// ------------- Loader ------------
+
+let loader = document.querySelector("#loader");
+setTimeout(() => {
+  loader.style.top = "-100%";
+}, 7000);
