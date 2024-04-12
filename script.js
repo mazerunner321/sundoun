@@ -21,3 +21,14 @@ allElems.forEach((elem, i) =>
     fixedImg.style.backgroundImage = `url(${image})`;
   })
 );
+
+//---------------
+function swiperJs() {
+  var swiper = new Swiper(".mySwiper", {
+    slidesPerView: "auto",
+    centeredSlides: true,
+    spaceBetween: 50,
+  });
+}
+
+swiperJs();
